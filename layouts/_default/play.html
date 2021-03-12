@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{ if in .Params.features "revealjs" }}
+ {{ $revealjs := resources.Get "css/reveal.css" }}
+  <link rel="stylesheet" href="{{ $revealjs.Permalink }}">
+{{ end }}
   <title>{{ .Site.Title }}</title>
 <style>
   {{ if in .Params.features "no-scroll" }}
@@ -37,6 +41,13 @@
   {{ if in .Params.features "jquery" }}
  {{ $jquery := resources.Get "js/jquery.min.js" }}
 <script src="{{ $jquery.Permalink }}"></script>
+{{ end }}
+{{ if in .Params.features "revealjs" }}
+ {{ $revealjs := resources.Get "js/reveal.js" }}
+<script src="{{ $revealjs.Permalink }}"></script>
+<script>
+      Reveal.initialize();
+    </script>
 {{ end }}
 {{ if in .Params.features "modernizr" }}
  {{ $modernizr := resources.Get "js/modernizr.js" }}

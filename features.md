@@ -22,6 +22,7 @@ Features are per page so you only load what you need, to ensure performance.
 | `ml5js` | 👍 | installs [ml5js library](https://ml5js.org/) | - | - |
 | `jquery` | 👍 | installs [jquery library](https://jquery.com/) | - | - |
 | `no-text-select` | 👍 | prevents text selection (globally) | - | non-global version? |
+| `revealjs` | 👍 | installs [revealjs library](https://revealjs.com/) | - | - |
 | `style` | ⏳ | loads main.css | - | hugo version needed |
 | `bootstrap` | ⏳ | installs bootstrap CSS and JS, plus popper and tooltip/popover activation | `jquery` | hugo version needed |
 | `redirect` | ⏳ | redirects page | - | maybe a shortcode? |
