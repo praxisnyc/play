@@ -7,7 +7,7 @@ Features are per page so you only load what you need, to ensure performance.
 
 ## Installation
 
-- make sure **praxis / play** is on ([view instructions](https://github.com/praxisnyc/play#praxis-play))
+- make sure **praxis / play** is on 
 - on frontmatter, add `features: ` and then whatever feature you want to add (ie: `features: no-scroll, ml5`, etc)
 
 
