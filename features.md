@@ -1,4 +1,4 @@
-# nonlinear play features
+# praxis / play features
 
 An ever-growing list of conditions and libraries to speed up your creative code: Want text not to be selectable? Want to prevent zoom? ml5? smooth scroll?
 
@@ -7,7 +7,7 @@ Features are per page so you only load what you need, to ensure performance.
 
 ## Installation
 
-- make sure **nonlinear play** is on ([view instructions](https://github.com/nonlinear/play#nonlinear-play))
+- make sure **praxis / play** is on ([view instructions](https://github.com/praxisnyc/play#praxis-play))
 - on frontmatter, add `features: ` and then whatever feature you want to add (ie: `features: no-scroll, ml5`, etc)
 
 
@@ -22,7 +22,7 @@ Features are per page so you only load what you need, to ensure performance.
 | `ml5js` | 👍 | installs [ml5js library](https://ml5js.org/) | - | - |
 | `jquery` | 👍 | installs [jquery library](https://jquery.com/) | - | - |
 | `no-text-select` | 👍 | prevents text selection (globally) | - | non-global version? |
-| `revealjs` | 👍 | installs [revealjs library](https://revealjs.com/) | - | - |
+| `revealjs` | 🧪 | installs [revealjs library](https://revealjs.com/) | - | - |
 | `style` | ⏳ | loads main.css | - | hugo version needed |
 | `bootstrap` | ⏳ | installs bootstrap CSS and JS, plus popper and tooltip/popover activation | `jquery` | hugo version needed |
 | `redirect` | ⏳ | redirects page | - | maybe a shortcode? |
@@ -36,13 +36,13 @@ Features are per page so you only load what you need, to ensure performance.
 | `fullbleed` | ⏳ | moves canvas to bg, below HTML | - | hugo version needed |
 
 - 👍: ready to use
+- 🧪: testing
 - ⏳: soon
 
 ## Get informed
 
 Features keep growing, so make sure to:
 
-- [Subscribe to our newsletter](https://tinyletter.com/nonlinear-play/) for updates
-- Contact us for suggestions: [email](mailto:info@nicholasfrota.com?subject=nonlinear%20play%20feature%20suggestion), [twitter](https://twitter.com/nonlinear), [mastodon](https://mastodon.social/@nonlinear)
+- [Subscribe to our newsletter](https://tinyletter.com/praxis-play/) for updates
+- Contact us for suggestions: [email](mailto:info@nicholasfrota.com?subject=praxis%20play%20feature%20suggestion), [twitter](https://twitter.com/nonlinear), [mastodon](https://mastodon.social/@nonlinear)
 - [Join our telegram group](https://t.me/joinchat/IZcW2U4HflaCQj1G) for questions, troubleshooting, etc
-

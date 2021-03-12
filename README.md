@@ -1,4 +1,4 @@
-# nonlinear play
+# praxis / play
 
 A [hugo](https://gohugo.io/) theme environment for  stand-alone creative code experiments, reducing the learning curve so you can enjoy being in the zone.
 
@@ -19,23 +19,17 @@ Features are per page so you only load what you need, to ensure performance.
 Features keep growing, so make sure to:
 
 1. [View all features](features.md#features)
-2. [Subscribe to our newsletter](https://tinyletter.com/nonlinear-play/) for updates
-3. Contact us for suggestions: [email](mailto:info@nicholasfrota.com?subject=nonlinear play feature suggestion), [twitter](https://mastodon.social/@nonlinear), [mastodon](https://twitter.com/nonlinear)
+2. [Subscribe to our newsletter](https://tinyletter.com/praxis-play/) for updates
+3. Contact us for suggestions: [email](mailto:info@nicholasfrota.com?subject=praxis%20play%20feature%20suggestion), [twitter](https://mastodon.social/@nonlinear), [mastodon](https://twitter.com/nonlinear)
 
-## Requirements
-
-1. Hugo
-2. Git
 
 ## Installation
 
-1. [Install hugo](https://gohugo.io/getting-started/installing/)
-1. Create a hugo site
-1. Create a [git repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo) for it
-1. Install `play` as a theme submodule
-	1. Go to `themes/` folder
-	1. Run `git submodule add https://github.com/nonlinear/play.git play`
+1. Download [latest release](https://github.com/praxisnyc/play/archive/1.1.zip)
+1. Unzip it and rename as `play`
+1. Move entire folder inside your huge `themes` folder
 1. On `config.toml` add `theme = "play"`
+1. Run your hugo normally
 
 
 ## Creating a new post
@@ -44,13 +38,6 @@ Features keep growing, so make sure to:
 1. On frontmatter, add:
 	1. `layout: play` to activate
 	1. add the features you need with `features: feature1, feature2` ([View all features](features.md#features))
-
-
-## Updating Theme
-
-1. go to your hugo project folder
-1. go to the theme with `cd themes/play`
-1. `git pull`
 
 
 ## Publishing
@@ -73,6 +60,6 @@ Github generates flat blogs server-side, so submodule breaks because it renames 
 
 ## Get informed
 
-- [Subscribe to our newsletter](https://tinyletter.com/nonlinear-play/) for updates
-- Contact us for suggestions: [email](mailto:info@nicholasfrota.com?subject=nonlinear%20play%20feature%20suggestion), [twitter](https://twitter.com/nonlinear), [mastodon](https://mastodon.social/@nonlinear)
+- [Subscribe to our newsletter](https://tinyletter.com/praxis-play/) for updates
+- Contact us for suggestions: [email](mailto:info@nicholasfrota.com?subject=praxis%20play%20feature%20suggestion), [twitter](https://twitter.com/nonlinear), [mastodon](https://mastodon.social/@nonlinear)
 - [Join our telegram group](https://t.me/joinchat/IZcW2U4HflaCQj1G) for questions, troubleshooting, etc
