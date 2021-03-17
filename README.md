@@ -9,11 +9,11 @@ Our goal to curate best practices (integrating, testing, documenting) to play wi
 - ml5js
 - PWA (so it works well on mobile browsers)
 
-## dependencies
+## features
 
-**praxis / play** provides an ever-growing list of ready-to-use dependencies to speed up your creative code: Want text not to be selectable? Want to prevent zoom? ml5? smooth scroll?
+**praxis / play** provides an ever-growing list of ready-to-use features to speed up your creative code: Want text not to be selectable? Want to prevent zoom? ml5? smooth scroll?
 
-Dependencies are per page so you only load what you need, to ensure performance. 
+Features are per page so you only load what you need, to ensure performance. 
 
 
 | Condition  | ⏱️ | Description | Dependencies | Notes |
@@ -57,7 +57,7 @@ Dependencies are per page so you only load what you need, to ensure performance.
 1. Make sure post is `.html`
 1. On frontmatter, add:
 	1. `layout: play` to activate
-	1. add the dependencies you need with `play: dependency1, dependency2` ([View all dependencies](https://github.com/praxisnyc/play/#dependencies))
+	1. add the features you need with `play: feature1, feature2` ([View all features](https://github.com/praxisnyc/play/#features))
 
 
 ## get informed
