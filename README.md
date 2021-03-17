@@ -9,15 +9,14 @@ Our goal to curate best practices (integrating, testing, documenting) to play wi
 - ml5js
 - PWA (so it works well on mobile browsers)
 
+## dependencies
 
-## features
+** praxis / play ** provides an ever-growing list of ready-to-use dependencies to speed up your creative code: Want text not to be selectable? Want to prevent zoom? ml5? smooth scroll?
 
-An ever-growing list of conditions and libraries to speed up your creative code: Want text not to be selectable? Want to prevent zoom? ml5? smooth scroll?
-
-Features are per page so you only load what you need, to ensure performance. 
+Dependencies are per page so you only load what you need, to ensure performance. 
 
 
-| Feature  | ⏱️ | Description | Dependencies | Notes |
+| Condition  | ⏱️ | Description | Dependencies | Notes |
 |:---- |:----------- |:----------- |:------------ |:----- |
 | `p5js` | 👍 | installs [p5js library](https://p5js.org/) | - | - |
 | `no-scroll` | 👍 | prevents scroll | - | - |
@@ -58,10 +57,10 @@ Features are per page so you only load what you need, to ensure performance.
 1. Make sure post is `.html`
 1. On frontmatter, add:
 	1. `layout: play` to activate
-	1. add the features you need with `play: feature1, feature2` ([View all features](features.md#features))
+	1. add the dependencies you need with `play: dependency1, dependency2` ([View all dependencies](https://github.com/praxisnyc/play/#dependencies))
 
 
-## Get informed
+## get informed
 
 - [Subscribe to our newsletter](https://tinyletter.com/praxis-play/) for updates
 - Contact us for suggestions: [email](mailto:info@nicholasfrota.com?subject=praxis%20play%20feature%20suggestion), [twitter](https://twitter.com/nonlinear), [mastodon](https://mastodon.social/@nonlinear)
