@@ -11,7 +11,7 @@ Our goal to curate best practices (integrating, testing, documenting) to play wi
 
 ## dependencies
 
-** praxis / play ** provides an ever-growing list of ready-to-use dependencies to speed up your creative code: Want text not to be selectable? Want to prevent zoom? ml5? smooth scroll?
+**praxis / play** provides an ever-growing list of ready-to-use dependencies to speed up your creative code: Want text not to be selectable? Want to prevent zoom? ml5? smooth scroll?
 
 Dependencies are per page so you only load what you need, to ensure performance. 
 
