@@ -16,7 +16,7 @@ Our goal to curate best practices (integrating, testing, documenting) to play wi
 Features are per page so you only load what you need, to ensure performance. 
 
 
-| Condition  | ⏱️ | Description | Dependencies | Notes |
+| Feature  | ⏱️ | Description | Dependencies | Notes |
 |:---- |:----------- |:----------- |:------------ |:----- |
 | `p5js` | 👍 | installs [p5js library](https://p5js.org/) | - | - |
 | `no-scroll` | 👍 | prevents scroll | - | - |
