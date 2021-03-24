@@ -47,7 +47,7 @@ Features are per page so you only load what you need, to ensure performance.
 
 ## installation
 
-1. Download [latest release](https://github.com/praxisnyc/play/archive/1.1.zip)
+1. Download [latest release](https://github.com/praxisnyc/play/archive/1.2.zip)
 1. Unzip it and rename as `play`
 1. Move entire folder inside your huge `themes` folder
 1. On `config.toml` add `theme = "play"`
