@@ -25,6 +25,7 @@ Features are per page so you only load what you need, to ensure performance.
 | `ml5js` | 👍 | installs [ml5js library](https://ml5js.org/) | - | - |
 | `jquery` | 👍 | installs [jquery library](https://jquery.com/) | - | - |
 | `style` | 👍 | accepts your [hugo main.scss](https://gohugo.io/hugo-pipes/scss-sass/) | make sure you have `main.scss` ready | - |
+| `no-credits` | 👍 | removes play credits feature | - | - |
 | `no-text-select` | 👍 | prevents text selection (globally) | - | non-global version? |
 | `revealjs` | 🧪 | installs [revealjs library](https://revealjs.com/) | - | - |
 | `style` | ⏳ | loads main.css | - | hugo version needed |
@@ -56,9 +57,7 @@ Features are per page so you only load what you need, to ensure performance.
 ## creating a new post
 
 1. Make sure post is `.html`
-1. On frontmatter, add:
-	1. `layout: play` to activate
-	1. add the features you need with `play: feature1, feature2` ([View all features](https://github.com/praxisnyc/play/#features))
+1. On frontmatter, the features you need with `play: feature1, feature2` ([View all features](https://github.com/praxisnyc/play/#features))
 
 
 ## get informed
