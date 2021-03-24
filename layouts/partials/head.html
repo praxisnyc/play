@@ -5,6 +5,11 @@
   {{ $revealjs := resources.Get "css/reveal.css" }}
   <link rel="stylesheet" href="{{ $revealjs.Permalink }}">
   {{ end }}
+  {{ if in .Params.play "style" }}
+  {{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint  }}
+{{ $style := $sass | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+  {{ end }}
   <title>{{ .Site.Title }}</title>
   <style>
     {{ if in .Params.play "no-scroll" }}
