@@ -1,0 +1,18 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{ if in .Params.play "revealjs" }}
+  {{ $revealjs := resources.Get "css/reveal.css" }}
+  <link rel="stylesheet" href="{{ $revealjs.Permalink }}">
+  {{ end }}
+  <title>{{ .Site.Title }}</title>
+  <style>
+    {{ if in .Params.play "no-scroll" }}
+    {{ partial "no-scroll.css" . }}
+
+    {{ end }} 
+    {{ if in .Params.play "no-text-select" }}
+    {{ partial "no-text-select.css" . }}
+    {{ end }} 
+  </style>
+</head>

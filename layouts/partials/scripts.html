@@ -1,43 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {{ if in .Params.play "revealjs" }}
- {{ $revealjs := resources.Get "css/reveal.css" }}
-  <link rel="stylesheet" href="{{ $revealjs.Permalink }}">
-{{ end }}
-  <title>{{ .Site.Title }}</title>
-<style>
-  {{ if in .Params.play "no-scroll" }}
-      html {
-      height  : 100%;
-      overflow: hidden;
-      position: relative;
-    }
-    body {
-      height  : 100%;
-      overflow: auto;
-      position: relative;
-      overflow: hidden;
-    }
-
-  {{ end }} 
-  {{ if in .Params.play "no-text-select" }}
-      * {
-     -webkit-touch-callout: none; /* iOS Safari */
-     -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-     -moz-user-select: none; /* Old versions of Firefox */
-     -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-            supported by Chrome, Edge, Opera and Firefox */
-          }
-    {{ end }} 
-</style>
-</head>
-<body>
-
   {{ if in .Params.play "jquery" }}
  {{ $jquery := resources.Get "js/jquery.min.js" }}
 <script src="{{ $jquery.Permalink }}"></script>
@@ -62,9 +22,6 @@
     {{ if in .Params.play "ml5js" }}
 <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
 {{ end }}
-
-
-
    <script>
     {{ if in .Params.play "no-zoom" }}
     document.addEventListener('gesturestart', function (e) {
@@ -80,7 +37,3 @@
     });
                 {{ end }}
   </script>
-  {{ .Content }}
-  {{ partial "credits.html" . }}
-</body>
-</html>
