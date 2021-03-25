@@ -17,7 +17,7 @@ Features are per page so you only load what you need, to ensure performance.
 
 
 | Feature  | ⏱️ | Description |
-|:---- |:----------- |:----------- |:------------ |:----- |
+|:---- |:----------- |:----------- |
 | `p5js` | 👍 | installs [p5js library](https://p5js.org/) | 
 | `no-scroll` | 👍 | prevents scroll |
 | `no-zoom` | 👍 | prevents zoom |
