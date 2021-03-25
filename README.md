@@ -58,7 +58,7 @@ Features are per page so you only load what you need, to ensure performance.
 ## creating a new post
 
 1. Make sure post is `.html`
-1. On frontmatter, the features you need with `play: feature1, feature2` ([View all features](https://github.com/praxisnyc/play/#features))
+1. On frontmatter, add the features you need with `play: feature1, feature2` ([View all features](https://github.com/praxisnyc/play/#features))
 
 
 ## get informed
