@@ -1,6 +1,5 @@
   {{ if in .Params.play "jquery" }}
- {{ $jquery := resources.Get "js/jquery.min.js" }}
-<script src="{{ $jquery.Permalink }}"></script>
+{{ partial "jquery.html" . }}
 {{ end }}
 {{ if in .Params.play "revealjs" }}
  {{ $revealjs := resources.Get "js/reveal.js" }}
@@ -10,6 +9,7 @@
     </script>
 {{ end }}
 {{ if in .Params.play "modernizr" }}
+{{ partial "jquery.html" . }}
  {{ $modernizr := resources.Get "js/modernizr.js" }}
  <script src="{{ $modernizr.Permalink }}"></script>
  {{ $detectizr := resources.Get "js/detectizr.js" }}

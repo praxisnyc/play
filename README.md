@@ -16,29 +16,29 @@ Our goal to curate best practices (integrating, testing, documenting) to play wi
 Features are per page so you only load what you need, to ensure performance. 
 
 
-| Feature  | ⏱️ | Description | Dependencies | Notes |
+| Feature  | ⏱️ | Description |
 |:---- |:----------- |:----------- |:------------ |:----- |
-| `p5js` | 👍 | installs [p5js library](https://p5js.org/) | - | - |
-| `no-scroll` | 👍 | prevents scroll | - | - |
-| `no-zoom` | 👍 | prevents zoom | - | - |
+| `p5js` | 👍 | installs [p5js library](https://p5js.org/) | 
+| `no-scroll` | 👍 | prevents scroll |
+| `no-zoom` | 👍 | prevents zoom |
 | `modernizr` | 👍 | installs [modernizr](https://modernizr.com/) and [detectizr](https://github.com/barisaydinoglu/Detectizr#detectizr) libraries | `jquery` |  - |
-| `ml5js` | 👍 | installs [ml5js library](https://ml5js.org/) | - | - |
-| `jquery` | 👍 | installs [jquery library](https://jquery.com/) | - | - |
-| `style` | 👍 | accepts your [hugo main.scss](https://gohugo.io/hugo-pipes/scss-sass/) | make sure you have `main.scss` ready | - |
-| `no-credits` | 👍 | removes play credits feature | - | - |
+| `ml5js` | 👍 | installs [ml5js library](https://ml5js.org/) |
+| `jquery` | 👍 | installs [jquery library](https://jquery.com/) |
+| `style` | 👍 | accepts your [hugo main.scss](https://gohugo.io/hugo-pipes/scss-sass/) (make sure you have `main.scss` ready) |
+| `no-credits` | 👍 | removes play credits feature |
 | `no-text-select` | 👍 | prevents text selection (globally) | - | non-global version? |
-| `revealjs` | 🧪 | installs [revealjs library](https://revealjs.com/) | - | - |
-| `style` | ⏳ | loads main.css | - | hugo version needed |
-| `bootstrap` | ⏳ | installs bootstrap CSS and JS, plus popper and tooltip/popover activation | `jquery` | hugo version needed |
-| `redirect` | ⏳ | redirects page | - | maybe a shortcode? |
-| `favicon` | ⏳ | adds favicon for all browsers and devices | - | hugo version needed |
-|`open-graph` | ⏳ | adds all open-graph features (for facebook ,twitter, etc) | - | hugo version needed |
-| `request-motion` | ⏳ | modal intercept requesting gyroscope permissions | - | should only appear if browser HAS this function |
-| `smooth-scroll` | ⏳ | forces smooth scrolling when internal navigation | - | hugo version needed |
-| `no-nav` | ⏳ | removes top browser navigation | - | maybe PWA is better? |
-| `request-location` | ⏳ | modal intercept requesting location permissions | - | hugo version needed |
-| `request-camera` | ⏳ | modal intercept requesting camera permissions | - | hugo version needed |
-| `fullbleed` | ⏳ | moves canvas to bg, below HTML | - | hugo version needed |
+| `revealjs` | 🧪 | installs [revealjs library](https://revealjs.com/) |
+| `style` | ⏳ | loads main.css |
+| `bootstrap` | ⏳ | installs bootstrap CSS and JS, plus popper and tooltip/popover activation |
+| `redirect` | ⏳ | redirects page  (maybe a shortcode?) |
+| `favicon` | ⏳ | adds favicon for all browsers and devices |
+|`open-graph` | ⏳ | adds all open-graph features (for facebook ,twitter, etc) |
+| `request-motion` | ⏳ | modal intercept requesting gyroscope permissions (should only appear if browser HAS this function) |
+| `smooth-scroll` | ⏳ | forces smooth scrolling when internal navigation |
+| `no-nav` | ⏳ | removes top browser navigation (maybe PWA is better?) |
+| `request-location` | ⏳ | modal intercept requesting location permissions |
+| `request-camera` | ⏳ | modal intercept requesting camera permissions |
+| `fullbleed` | ⏳ | moves canvas to bg, below HTML |
 
 - 👍: ready to use
 - 🧪: testing
