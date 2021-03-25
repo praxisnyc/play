@@ -28,6 +28,7 @@ Features are per page so you only load what you need, to ensure performance.
 | `no-credits` | 👍 | removes play credits feature |
 | `no-text-select` | 👍 | prevents text selection (globally) | - | non-global version? |
 | `revealjs` | 🧪 | installs [revealjs library](https://revealjs.com/) |
+| `magazine` | 🧪 | a variation of revealjs with magazine ratios |
 | `style` | ⏳ | loads main.css |
 | `bootstrap` | ⏳ | installs bootstrap CSS and JS, plus popper and tooltip/popover activation |
 | `redirect` | ⏳ | redirects page  (maybe a shortcode?) |
