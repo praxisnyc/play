@@ -25,7 +25,7 @@ Features are per page so you only load what you need, to ensure performance.
 | `ml5js` | 👍 | installs [ml5js library](https://ml5js.org/) |
 | `jquery` | 👍 | installs [jquery library](https://jquery.com/) |
 | `style` | 👍 | accepts your [hugo main.scss](https://gohugo.io/hugo-pipes/scss-sass/) (make sure you have `main.scss` ready) |
-| `no-credits` | 👍 | removes play credits feature |
+| `no-credits` | 👍 | removes **praxis / play** credits |
 | `no-text-select` | 👍 | prevents text selection (globally) | - | non-global version? |
 | `revealjs` | 🧪 | installs [revealjs library](https://revealjs.com/) |
 | `magazine` | 🧪 | a variation of revealjs with magazine ratios |
