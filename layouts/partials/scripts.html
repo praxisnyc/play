@@ -1,11 +1,10 @@
 
 
-      {{ if in .Params.play "jquery" }}
+      {{ if or (in .Params.play "jquery") (in .Params.play "modernizr") }}
 {{ partial "jquery.html" . }}
 {{ end }}
 
 {{ if in .Params.play "modernizr" }}
-{{ partial "jquery.html" . }}
  {{ $modernizr := resources.Get "js/modernizr.js" }}
  <script src="{{ $modernizr.Permalink }}"></script>
  {{ $detectizr := resources.Get "js/detectizr.js" }}
