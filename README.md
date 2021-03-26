@@ -31,50 +31,50 @@ Features are per page so you only load what you need, to ensure performance.
 
 👍 is ready to use, 🧪 is in testing, ⏳ is soon
 
-- `p5js` 👍 
+- 👍 `p5js`
 	- installs [p5js library](https://p5js.org/)
-- `no-scroll` 👍 
+- 👍 `no-scroll`
 	- prevents scroll
-- `no-zoom` 👍 
+- 👍 `no-zoom`
 	- prevents zoom
-- `modernizr` 👍 
+- 👍 `modernizr`
 	- installs [modernizr](https://modernizr.com/) and [detectizr](https://github.com/barisaydinoglu/Detectizr#detectizr) libraries
-- `ml5js` 👍 
+- 👍 `ml5js`
 	- installs [ml5js library](https://ml5js.org/)
-- `jquery` 👍 
+- 👍 `jquery`
 	- installs [jquery library](https://jquery.com/)
-- `style` 👍 
+- 👍 `style`
 	- accepts your [hugo main.scss](https://gohugo.io/hugo-pipes/scss-sass/)
 	- make sure you have `main.scss` ready
-- `no-credits` 👍 
+- 👍 `no-credits`
 	- removes **praxis / play** credits
-- `no-text-select` 👍 
+- 👍 `no-text-select`
 	- prevents text selection (globally)
-- `revealjs` 👍 
+- 👍 `revealjs`
 	- installs [revealjs library](https://revealjs.com/)
 	- wrap each slide in `<section>` for it to work
 	- use `revealjs[theme]` for themes ([view complete list](https://revealjs.com/themes/))
-- `magazine` 🧪 
+- 🧪 `magazine`
 	- a variation of revealjs with magazine ratios
-- `bootstrap` ⏳ 
+- ⏳ `bootstrap`
 	- installs bootstrap CSS and JS, plus popper and tooltip/popover activation
-- `redirect` ⏳ 
+- ⏳ `redirect`
 	- redirects page  (maybe a shortcode?)
-- `favicon` ⏳ 
+- ⏳ `favicon`
 	- adds favicon for all browsers and devices
-- `open-graph` ⏳ 
+- ⏳ `open-graph`
 	- adds all open-graph features (for facebook ,twitter, etc)
-- `request-motion` ⏳ 
+- ⏳ `request-motion`
 	- modal intercept requesting gyroscope permissions (should only appear if browser HAS this function)
-- `smooth-scroll` ⏳ 
+- ⏳ `smooth-scroll`
 	- forces smooth scrolling when internal navigation
-- `no-nav` ⏳ 
+- ⏳ `no-nav`
 	- removes top browser navigation (maybe PWA is better?)
-- `request-location` ⏳ 
+- ⏳ `request-location`
 	- modal intercept requesting location permissions
-- `request-camera` ⏳ 
+- ⏳ `request-camera`
 	- modal intercept requesting camera permissions
-- `fullbleed` ⏳ 
+- ⏳ `fullbleed`
 	- moves canvas to bg, below HTML
 
 
