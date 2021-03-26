@@ -2,8 +2,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {{ if in .Params.play "revealjs" }}
-{{ partial "revealjs-1of2.html" . }}
-  {{ partial "revealjs-3of3.html" . }}
+{{ partial "revealjs-css.html" . }}
+    {{ end }}
+      {{ if in .Params.play "revealjs" }}
+  {{ partial "revealjs-themes.html" . }}
     {{ end }}
 
   {{ if in .Params.play "style" }}

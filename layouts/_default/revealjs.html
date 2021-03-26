@@ -7,13 +7,13 @@
 		<title>reveal.js</title>
 
   {{ if in .Params.play "revealjs" }}
-{{ partial "revealjs-1of2.html" . }}
+{{ partial "revealjs-css.html" . }}
 		{{ end }}
 	</head>
 	<body>
 	  {{ .Content }}
   {{ if in .Params.play "revealjs" }}
- {{ partial "revealjs-2of2.html" . }}
+ {{ partial "revealjs-js.html" . }}
 		  {{ end }}
 	</body>
 </html>
