@@ -1,11 +1,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {{ if or (in .Params.play "revealjs") (in .Params.play "magazine") }}
+  {{ if in .Params.play "revealjs" }}
 {{ partial "revealjs-css.html" . }}
-    {{ end }}
-      {{ if in .Params.play "revealjs" }}
-  {{ partial "revealjs-themes.html" . }}
     {{ end }}
 
   {{ if in .Params.play "style" }}
@@ -17,7 +14,7 @@
   <style>
     {{ if in .Params.play "no-scroll" }}
     {{ partial "no-scroll.css" . }}
-    {{ end }} 
+    {{ end }}
     {{ if in .Params.play "no-text-select" }}
     {{ partial "no-text-select.css" . }}
     {{ end }} 

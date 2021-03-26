@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 {{ partial "head.html" . }}
-<body>
+<body {{ if in .Params.play "revealjs[magazine]" }}class="magazine"{{ end }}>
   {{ partial "scripts.html" . }}
-  {{ if or (in .Params.play "revealjs") (in .Params.play "magazine") }}
-  <div class='reveal{{ if in .Params.play "magazine" }} magazine{{ end }}'>
+  {{ if in .Params.play "revealjs" }}
+  <div class="reveal">
 	<div class="slides">
   {{ .Content }}
 </div>
@@ -14,7 +14,7 @@
   {{ end }}
   
   {{ partial "credits.html" . }}
-      {{ if or (in .Params.play "revealjs") (in .Params.play "magazine") }}
+      {{ if in .Params.play "revealjs" }}
  {{ partial "revealjs-js.html" . }}
 		  {{ end }}
 </body>

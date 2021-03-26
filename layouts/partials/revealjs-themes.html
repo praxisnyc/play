@@ -14,6 +14,10 @@
   {{ $league := resources.Get "css/revealjs/theme/league.css" }}
   <link rel="stylesheet" href="{{ $league.Permalink }}" id="theme">
   {{ end }}
+     {{ if in .Params.play "revealjs[magazine]" }}
+  {{ $magazine := resources.Get "css/revealjs/theme/magazine.css" }}
+  <link rel="stylesheet" href="{{ $magazine.Permalink }}" id="theme">
+  {{ end }}
     {{ if in .Params.play "revealjs[moon]" }}
   {{ $moon := resources.Get "css/revealjs/theme/moon.css" }}
   <link rel="stylesheet" href="{{ $moon.Permalink }}" id="theme">
