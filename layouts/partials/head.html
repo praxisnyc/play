@@ -1,7 +1,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {{ if in .Params.play "revealjs" }}
+  {{ if or (in .Params.play "revealjs") (in .Params.play "magazine") }}
 {{ partial "revealjs-css.html" . }}
     {{ end }}
       {{ if in .Params.play "revealjs" }}

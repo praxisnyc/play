@@ -3,9 +3,18 @@
 {{ partial "head.html" . }}
 <body>
   {{ partial "scripts.html" . }}
+  {{ if or (in .Params.play "revealjs") (in .Params.play "magazine") }}
+  <div class='reveal{{ if in .Params.play "magazine" }} magazine{{ end }}'>
+	<div class="slides">
   {{ .Content }}
+</div>
+</div>
+  {{ else }}
+  {{ .Content }}
+  {{ end }}
+  
   {{ partial "credits.html" . }}
-    {{ if in .Params.play "revealjs" }}
+      {{ if or (in .Params.play "revealjs") (in .Params.play "magazine") }}
  {{ partial "revealjs-js.html" . }}
 		  {{ end }}
 </body>
