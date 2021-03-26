@@ -2,9 +2,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {{ if in .Params.play "revealjs" }}
-  {{ $revealjs := resources.Get "css/reveal.css" }}
-  <link rel="stylesheet" href="{{ $revealjs.Permalink }}">
-  {{ end }}
+{{ partial "revealjs-1of2.html" . }}
+  {{ partial "revealjs-3of3.html" . }}
+    {{ end }}
+
   {{ if in .Params.play "style" }}
   {{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint  }}
 {{ $style := $sass | resources.ToCSS }}
@@ -14,7 +15,6 @@
   <style>
     {{ if in .Params.play "no-scroll" }}
     {{ partial "no-scroll.css" . }}
-
     {{ end }} 
     {{ if in .Params.play "no-text-select" }}
     {{ partial "no-text-select.css" . }}

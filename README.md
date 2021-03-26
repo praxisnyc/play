@@ -21,15 +21,14 @@ Features are per page so you only load what you need, to ensure performance.
 | `p5js` | 👍 | installs [p5js library](https://p5js.org/) | 
 | `no-scroll` | 👍 | prevents scroll |
 | `no-zoom` | 👍 | prevents zoom |
-| `modernizr` | 👍 | installs [modernizr](https://modernizr.com/) and [detectizr](https://github.com/barisaydinoglu/Detectizr#detectizr) libraries | `jquery` |  - |
+| `modernizr` | 👍 | installs [modernizr](https://modernizr.com/) and [detectizr](https://github.com/barisaydinoglu/Detectizr#detectizr) libraries |
 | `ml5js` | 👍 | installs [ml5js library](https://ml5js.org/) |
 | `jquery` | 👍 | installs [jquery library](https://jquery.com/) |
 | `style` | 👍 | accepts your [hugo main.scss](https://gohugo.io/hugo-pipes/scss-sass/) (make sure you have `main.scss` ready) |
 | `no-credits` | 👍 | removes **praxis / play** credits |
 | `no-text-select` | 👍 | prevents text selection (globally) | - | non-global version? |
-| `revealjs` | 🧪 | installs [revealjs library](https://revealjs.com/) |
+| `revealjs` | 👍 | installs [revealjs library](https://revealjs.com/). use `revealjs[theme]` for themes. [view complete list](https://revealjs.com/themes/) |
 | `magazine` | 🧪 | a variation of revealjs with magazine ratios |
-| `style` | ⏳ | loads main.css |
 | `bootstrap` | ⏳ | installs bootstrap CSS and JS, plus popper and tooltip/popover activation |
 | `redirect` | ⏳ | redirects page  (maybe a shortcode?) |
 | `favicon` | ⏳ | adds favicon for all browsers and devices |

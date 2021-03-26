@@ -5,5 +5,8 @@
   {{ partial "scripts.html" . }}
   {{ .Content }}
   {{ partial "credits.html" . }}
+    {{ if in .Params.play "revealjs" }}
+ {{ partial "revealjs-2of2.html" . }}
+		  {{ end }}
 </body>
 </html>
