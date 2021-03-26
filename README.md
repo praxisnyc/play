@@ -15,30 +15,51 @@ Our goal to curate best practices (integrating, testing, documenting) to play wi
 
 Features are per page so you only load what you need, to ensure performance. 
 
-
-| Feature  | ⏱️ | Description |
-|:---- |:----------- |:----------- |
-| `p5js` | 👍 | installs [p5js library](https://p5js.org/) | 
-| `no-scroll` | 👍 | prevents scroll |
-| `no-zoom` | 👍 | prevents zoom |
-| `modernizr` | 👍 | installs [modernizr](https://modernizr.com/) and [detectizr](https://github.com/barisaydinoglu/Detectizr#detectizr) libraries |
-| `ml5js` | 👍 | installs [ml5js library](https://ml5js.org/) |
-| `jquery` | 👍 | installs [jquery library](https://jquery.com/) |
-| `style` | 👍 | accepts your [hugo main.scss](https://gohugo.io/hugo-pipes/scss-sass/) (make sure you have `main.scss` ready) |
-| `no-credits` | 👍 | removes **praxis / play** credits |
-| `no-text-select` | 👍 | prevents text selection (globally) | - | non-global version? |
-| `revealjs` | 👍 | installs [revealjs library](https://revealjs.com/). use `revealjs[theme]` for themes. [view complete list](https://revealjs.com/themes/) |
-| `magazine` | 🧪 | a variation of revealjs with magazine ratios |
-| `bootstrap` | ⏳ | installs bootstrap CSS and JS, plus popper and tooltip/popover activation |
-| `redirect` | ⏳ | redirects page  (maybe a shortcode?) |
-| `favicon` | ⏳ | adds favicon for all browsers and devices |
-|`open-graph` | ⏳ | adds all open-graph features (for facebook ,twitter, etc) |
-| `request-motion` | ⏳ | modal intercept requesting gyroscope permissions (should only appear if browser HAS this function) |
-| `smooth-scroll` | ⏳ | forces smooth scrolling when internal navigation |
-| `no-nav` | ⏳ | removes top browser navigation (maybe PWA is better?) |
-| `request-location` | ⏳ | modal intercept requesting location permissions |
-| `request-camera` | ⏳ | modal intercept requesting camera permissions |
-| `fullbleed` | ⏳ | moves canvas to bg, below HTML |
+1. `p5js` 👍 
+	- installs [p5js library](https://p5js.org/)
+1. `no-scroll` 👍 
+	- prevents scroll
+1. `no-zoom` 👍 
+	- prevents zoom
+1. `modernizr` 👍 
+	- installs [modernizr](https://modernizr.com/) and [detectizr](https://github.com/barisaydinoglu/Detectizr#detectizr) libraries
+1. `ml5js` 👍 
+	- installs [ml5js library](https://ml5js.org/)
+1. `jquery` 👍 
+	- installs [jquery library](https://jquery.com/)
+1. `style` 👍 
+	- accepts your [hugo main.scss](https://gohugo.io/hugo-pipes/scss-sass/)
+	- make sure you have `main.scss` ready
+1. `no-credits` 👍 
+	- removes **praxis / play** credits
+1. `no-text-select` 👍 
+	- prevents text selection (globally)
+1. `revealjs` 👍 
+	- installs [revealjs library](https://revealjs.com/)
+	- wrap each slide in `<section>` for it to work
+	- use `revealjs[theme]` for themes ([view complete list](https://revealjs.com/themes/))
+1. `magazine` 🧪 
+	- a variation of revealjs with magazine ratios
+1. `bootstrap` ⏳ 
+	- installs bootstrap CSS and JS, plus popper and tooltip/popover activation
+1. `redirect` ⏳ 
+	- redirects page  (maybe a shortcode?)
+1. `favicon` ⏳ 
+	- adds favicon for all browsers and devices
+1. `open-graph` ⏳ 
+	- adds all open-graph features (for facebook ,twitter, etc)
+1. `request-motion` ⏳ 
+	- modal intercept requesting gyroscope permissions (should only appear if browser HAS this function)
+1. `smooth-scroll` ⏳ 
+	- forces smooth scrolling when internal navigation
+1. `no-nav` ⏳ 
+	- removes top browser navigation (maybe PWA is better?)
+1. `request-location` ⏳ 
+	- modal intercept requesting location permissions
+1. `request-camera` ⏳ 
+	- modal intercept requesting camera permissions
+1. `fullbleed` ⏳ 
+	- moves canvas to bg, below HTML
 
 - 👍: ready to use
 - 🧪: testing
@@ -47,7 +68,7 @@ Features are per page so you only load what you need, to ensure performance.
 
 ## installation
 
-1. Download [latest release](https://github.com/praxisnyc/play/archive/1.2.zip)
+1. Download [latest release](https://github.com/praxisnyc/play/archive/1.3.zip)
 1. Unzip it and rename as `play`
 1. Move entire folder inside your huge `themes` folder
 1. On `config.toml` add `theme = "play"`
