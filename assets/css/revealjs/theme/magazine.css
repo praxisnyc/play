@@ -1,8 +1,9 @@
 :root {
 	--magazine-ratio: 500px;
-	/* documentation pending */
+	/* px is a fiction since revealjs scales slides automatically. */	
+	/* the bigger the vallue, the "thicker" the magazine */
 	--magazine-default-bg: white;
-	/* add classes to sections to style it individually */											
+	/* add classes to sections to style it individually */
 	--magazine-radius: 4px;
 	--magazine-color-1: #666;
 	/* arrows and progress bar */
