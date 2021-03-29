@@ -80,6 +80,16 @@ Features are per page so you only load what you need, to ensure performance.
 - ⏳ `fullbleed`
 	- moves canvas to bg, below HTML
 
+## credits
+
+all **praxis / play** creations have a hidden "credits" modal, that can be access by clicking a hidden area top-right. It shows:
+
+- 👍 title, description (from frontmatter)
+- 👍 wanna describe in details your notes? use `about:` frontmatter. it's markdown-ready (use "" if multi-line)
+- ⏳ if you have other relevant creations (sorted by features), it's listed here too (use `no-relevant-links` feature to disable)
+- ⏳ author list (as [per this standardization](https://github.com/gohugoio/hugo/pull/1850))
+- 👍 Don't want credits on your creation? Use `no-credits` feature
+
 
 ## get informed
 
