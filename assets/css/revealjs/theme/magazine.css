@@ -9,7 +9,6 @@
 	--magazine-animation: magazine;
 	--magazine-animation-duration: 500ms;
 	--magazine-animation-timing-function: ease-out;
-
 }
 
 @-webkit-keyframes magazine {

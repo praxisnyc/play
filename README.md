@@ -50,12 +50,15 @@ Features are per page so you only load what you need, to ensure performance.
 	- removes **praxis / play** credits
 - 👍 `no-text-select`
 	- prevents text selection (globally)
+	- 🐛: doesn't work with [revealjs](https://revealjs.com/)
 - 👍 `revealjs`
 	- installs [revealjs library](https://revealjs.com/)
 	- wrap each slide in `<section>` for it to work
 	- use `revealjs[theme]` for themes ([view complete list](https://revealjs.com/themes/))
 - 🧪 `magazine`
 	- a variation of revealjs with magazine ratios
+	- use `play: revealjs[magazine]` to activate it
+	- 📖: check [css variables](https://github.com/praxisnyc/play/blob/main/assets/css/revealjs/theme/magazine.css) to intercept and make your own.
 - ⏳ `bootstrap`
 	- installs bootstrap CSS and JS, plus popper and tooltip/popover activation
 - ⏳ `redirect`
