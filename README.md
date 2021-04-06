@@ -48,6 +48,8 @@ Features are per page so you only load what you need, to ensure performance.
 	- make sure you have `main.scss` ready
 - 👍 `no-credits`
 	- removes **praxis / play** credits
+- 👍 `no-scope`
+	- removes CSS scope html classes ([view below]((https://github.com/praxisnyc/play/#CSS-scope))
 - 👍 `no-text-select`
 	- prevents text selection (globally)
 	- 🐛: doesn't work with [revealjs](https://revealjs.com/)
@@ -82,7 +84,7 @@ Features are per page so you only load what you need, to ensure performance.
 
 ## credits
 
-all **praxis / play** creations have a hidden "credits" modal, that can be access by clicking a hidden area top-right. It shows:
+By default, all **praxis / play** creations have a hidden **credits** modal, accessed by clicking a top-right hidden area. It has:
 
 - 👍 title, description (from frontmatter)
 - 👍 wanna describe in details your notes? use `about:` frontmatter. it's markdown-ready (use "" if multi-line)
@@ -90,6 +92,13 @@ all **praxis / play** creations have a hidden "credits" modal, that can be acces
 - ⏳ author list (as [per this standardization](https://github.com/gohugoio/hugo/pull/1850))
 - 👍 Don't want credits on your creation? Use `no-credits` feature
 
+## CSS scope
+
+**praxis / play** automatically adds post slug as an `html` class, so if your post url is `domain/category/post/` your `html` also has a class `post`.
+
+You can also create a more generic style (for multiple pages) by adding `style: style-name` on frontmatter. It will also appear as a class on `html`.
+
+Don't want CSS scope? Use `no-scope` feature
 
 ## get informed
 
