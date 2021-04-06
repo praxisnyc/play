@@ -11,7 +11,7 @@ Our goal to curate best practices (integrating, testing, documenting) to play wi
 
 ## installation
 
-1. Download [latest release](https://github.com/praxisnyc/play/archive/1.3.zip)
+1. Download [latest release](https://github.com/praxisnyc/play/archive/1.4.zip)
 1. Unzip it and rename as `play`
 1. Move entire folder inside your huge `themes` folder
 1. On `config.toml` add `theme = "play"`
@@ -49,7 +49,7 @@ Features are per page so you only load what you need, to ensure performance.
 - 👍 `no-credits`
 	- removes **praxis / play** credits
 - 👍 `no-scope`
-	- removes CSS scope html classes ([view below]((https://github.com/praxisnyc/play/#CSS-scope))
+	- removes CSS scope html classes ([view below](https://github.com/praxisnyc/play#css-scope))
 - 👍 `no-text-select`
 	- prevents text selection (globally)
 	- 🐛: doesn't work with [revealjs](https://revealjs.com/)
@@ -87,7 +87,7 @@ Features are per page so you only load what you need, to ensure performance.
 By default, all **praxis / play** creations have a hidden **credits** modal, accessed by clicking a top-right hidden area. It has:
 
 - 👍 title, description (from frontmatter)
-- 👍 wanna describe in details your notes? use `about:` frontmatter. it's markdown-ready (use "" if multi-line)
+- 👍 wanna describe in details your notes? use `about:` frontmatter. It's markdown-ready (use "" if multi-line)
 - ⏳ if you have other relevant creations (sorted by features), it's listed here too (use `no-relevant-links` feature to disable)
 - ⏳ author list (as [per this standardization](https://github.com/gohugoio/hugo/pull/1850))
 - 👍 Don't want credits on your creation? Use `no-credits` feature
