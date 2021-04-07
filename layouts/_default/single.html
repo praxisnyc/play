@@ -16,6 +16,7 @@
   {{ end }}
   
   {{ partial "credits.html" . }}
+    {{ partial "requests.html" . }}
       {{ if in .Params.play "revealjs" }}
  {{ partial "revealjs-js.html" . }}
 		  {{ end }}
