@@ -94,7 +94,7 @@ By default, all **praxis / play** creations have a hidden **credits** modal, acc
 
 ## CSS scope
 
-**praxis / play** automatically adds post slug as an `html` class, so if your post url is `domain/category/post/` your `html` also has a class `post`.
+**praxis / play** automatically adds post slug as an `html` class, so if your post url is `domain/category/post/` your `html` also has a class `play-post` (it starts with `play-` to prevent any conflict).
 
 You can also create a more generic style (for multiple pages) by adding `style: style-name` on frontmatter. It will also appear as a class on `html`.
 
