@@ -1,5 +1,5 @@
 :root {
-	--magazine-ratio: 500px;
+	--magazine-ratio: 400px;
 	/* px is a fiction since revealjs scales slides automatically. */	
 	/* the bigger the vallue, the "thicker" the magazine */
 	--magazine-default-bg: white;
@@ -15,6 +15,13 @@
 	/* use false to disable initial animation */
 	--magazine-animation-duration: 500ms;
 	--magazine-animation-timing-function: ease-out;
+}
+
+.reveal.slide .slides > section:not([data-transition]).past {
+    transform: translate(-100%,0);
+}
+.reveal .slides > section[data-transition~="slide-out"].past, .reveal.slide .slides > section:not([data-transition]).future {
+    transform: translate(100%,0);
 }
 
 @-webkit-keyframes magazine {
