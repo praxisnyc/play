@@ -1,0 +1,36 @@
+<script>
+var mouseX;
+var mouseY;
+
+_default_unit = 'px';
+_default_minX = 0;
+_default_minY = 0;
+_default_event = 'mousemove';
+
+
+unit = {{ if .Get "unit" }}{{ .Get "unit" }}{{ else }}_default_unit{{end}};
+minX = {{ if .Get "minX" }}{{ .Get "minX" }}{{ else }}_default_minX{{end}};
+minY = {{ if .Get "minY" }}{{ .Get "minY" }}{{ else }}_default_minY{{end}};
+event = {{ if .Get "event" }}{{ .Get "event" }}{{ else }}_default_event{{end}};
+
+
+window.addEventListener(event, function(e) {
+	mouseX = e.clientX;
+mouseY = e.clientY;
+const target = document.querySelector({{ .Get "target" }});
+target.style.setProperty({{ .Get "CSSvariableX" }}, relationship(0, screen.width, minX, {{ .Get "maxX" }}, mouseX) + unit);
+target.style.setProperty({{ .Get "CSSvariableY" }}, relationship(0, screen.height, minY, {{ .Get "maxY" }}, mouseY) + unit);
+});
+
+function relationship(origin0, origin1, destination0, destination1, element) {
+	var lengthOrigin = origin1 - origin0;
+	var lengthDestination = destination1 - destination0;
+	var ratio = lengthDestination / lengthOrigin;
+	return destination0 + element * ratio;
+}
+</script>
+
+<!-- var rect = element.getBoundingClientRect();
+console.log(
+rect.top
+, rect.right, rect.bottom, rect.left); -->
