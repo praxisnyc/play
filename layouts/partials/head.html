@@ -5,7 +5,7 @@
 {{ partial "revealjs-css.html" . }}
     {{ end }}
 
-  
+  <link rel="manifest" href="{{ .Site.BaseURL }}manifest.json">
   <title>{{ .Site.Title }}</title>
   <style>
     {{ if in .Params.play "no-scroll" }}

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" class='{{ if in .Params.play "no-scope" }}{{ else }}
 play-{{ .File.BaseFileName }} {{ if .Params.style  }}{{ .Params.style }}{{ end }}
-    {{ end }}'>
+{{ end }}'>
 {{ partial "head.html" . }}
 <body>
   {{ partial "scripts.html" . }}
   {{ if in .Params.play "revealjs" }}
   <div class="reveal">
-	<div class="slides">
-  {{ .Content }}
+   <div class="slides">
+    {{ .Content }}
+  </div>
 </div>
-</div>
-  {{ else }}
-  {{ .Content }}
-  {{ end }}
-  
-  {{ partial "credits.html" . }}
-    {{ partial "requests.html" . }}
-      {{ if in .Params.play "revealjs" }}
- {{ partial "revealjs-js.html" . }}
-		  {{ end }}
+{{ else }}
+{{ .Content }}
+{{ end }}
+
+{{ partial "credits.html" . }}
+{{ partial "requests.html" . }}
+{{ if in .Params.play "revealjs" }}
+{{ partial "revealjs-js.html" . }}
+{{ end }}
 </body>
 </html>
