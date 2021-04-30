@@ -1,0 +1,17 @@
+<h3>authors: {{ .Site.Params.Author }}</h3>
+
+{{ $authors := .Site.Params.Author }}
+{{ range .Site.Data.authors }}
+{{ if in .alias $authors }}
+{{ .Site.Params.Author }}
+<ol>
+	<li>{{ .name }} {{ .surname }}</li>
+	<li>{{ .location }}</li>
+	<li>{{ .bio }}</li>
+	{{ range .links }}
+	<li><a href="{{ .URL }}">{{ .title }}</a></li>
+	{{end}}
+</ol>
+{{ end }}
+
+{{ end }}
