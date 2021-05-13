@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class='{{ if in .Params.play "no-scope" }}{{ else }}
-play-{{ .File.BaseFileName }} {{ if .Params.style  }}{{ .Params.style }}{{ end }}
+<html lang="en" class='{{ if in .Params.play "no-scope" }}{{ else if in .Params.play "magazine" }}
+spread
+{{else}}
+style-{{ .File.BaseFileName }} {{ if .Params.style  }}{{ .Params.style }}{{ end }}
 {{ end }}'>
 {{ partial "head.html" . }}
 <body>
@@ -10,6 +12,10 @@ play-{{ .File.BaseFileName }} {{ if .Params.style  }}{{ .Params.style }}{{ end }
    <div class="slides">
     {{ .Content }}
   </div>
+</div>
+  {{ else if in .Params.play "spread" }}
+<div class="spread">
+		{{ .Content }}
 </div>
 {{ else }}
 {{ .Content }}

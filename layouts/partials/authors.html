@@ -1,4 +1,13 @@
-<h3>authors: {{ .Site.Params.Author }}</h3>
+
+
+{{ if .Params.authors }}
+
+<!-- loop thru post authors, as alias for data -->
+
+
+{{else}}
+
+
 
 {{ $authors := .Site.Params.Author }}
 {{ range .Site.Data.authors }}
@@ -13,5 +22,12 @@
 	{{end}}
 </ol>
 {{ end }}
-
 {{ end }}
+
+
+
+
+{{end}}
+
+
+

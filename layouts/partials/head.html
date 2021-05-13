@@ -67,10 +67,10 @@ a.credits-trigger {
     z-index: 1000 !important;
 
   }
-  .play-modal#credits {
+/*  .play-modal#credits {
       visibility: visible;
     opacity: 1;
-  }
+  }*/
 
   .play-modal:target {
     visibility: visible;
@@ -137,4 +137,7 @@ color: black;
 {{ $style := $sass | resources.ToCSS }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
   {{ end }}
+   {{ if in .Params.play "spread" }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/spread.css">
+ {{ end }}
 </head>

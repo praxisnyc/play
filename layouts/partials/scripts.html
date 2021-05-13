@@ -15,6 +15,14 @@
 {{ if in .Params.play "ml5js" }}
 <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
 {{ end }}
+{{ if in .Params.play "threejs" }}
+{{ $threejs := resources.Get "js/three.js" }}
+<script src="{{ $threejs.Permalink }}"></script>
+{{ $GLTFLoader := resources.Get "js/GLTFLoader.js" }}
+<script src="{{ $GLTFLoader.Permalink }}"></script>
+{{ $OrbitControls := resources.Get "js/OrbitControls.js" }}
+<script src="{{ $OrbitControls.Permalink }}"></script>
+{{ end }}
 
 {{ if in .Params.play "no-zoom" }}
 <script>
