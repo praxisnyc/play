@@ -1,0 +1,1 @@
+![image](https://praxis.nyc/images/logo-big.svg)
