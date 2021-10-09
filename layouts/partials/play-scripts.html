@@ -1,5 +1,5 @@
 {{ if or (in .Params.play "jquery") (in .Params.play "modernizr") }}
-{{ partial "jquery.html" . }}
+{{ partial "play-jquery.html" . }}
 {{ end }}
 
 {{ if in .Params.play "modernizr" }}

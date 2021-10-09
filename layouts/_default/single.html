@@ -4,9 +4,9 @@ spread
 {{else}}
 style-{{ .File.BaseFileName }} {{ if .Params.style  }}{{ .Params.style }}{{ end }}
 {{ end }}'>
-{{ partial "head.html" . }}
+{{ partial "play-head.html" . }}
 <body>
-  {{ partial "scripts.html" . }}
+  {{ partial "play-scripts.html" . }}
   {{ if in .Params.play "revealjs" }}
   <div class="reveal">
    <div class="slides">
@@ -21,10 +21,10 @@ style-{{ .File.BaseFileName }} {{ if .Params.style  }}{{ .Params.style }}{{ end 
 {{ .Content }}
 {{ end }}
 
-{{ partial "credits.html" . }}
-{{ partial "requests.html" . }}
+{{ partial "play-credits.html" . }}
+{{ partial "play-requests.html" . }}
 {{ if in .Params.play "revealjs" }}
-{{ partial "revealjs-js.html" . }}
+{{ partial "play-revealjs-js.html" . }}
 {{ end }}
 </body>
 </html>
