@@ -3,4 +3,4 @@
 #  Play 
 ## a creative code theme 
 
-more at [praxis.nyc/play/hugo-theme/](https://praxis.nyc/play/hugo-theme/)
+more at [praxis.nyc/play](praxis.nyc/play)
