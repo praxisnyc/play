@@ -1,0 +1,73 @@
+
+
+{{ if or (in .Params.play "threejs") (in .Params.play "bg-slideshow") }}
+{{ $three := resources.Get "js/three.js" }}
+<script src="{{ $three.Permalink }}"></script>
+{{ end }}
+{{ if or (in .Params.play "gsap") (in .Params.play "bg-slideshow") }}
+{{ $gsap := resources.Get "js/gsap.js" }}
+<script src="{{ $gsap.Permalink }}"></script>
+{{ end }}
+{{ if or (in .Params.play "sketch") (in .Params.play "bg-slideshow") }}
+{{ $sketch := resources.Get "js/sketch.js" }}
+<script src="{{ $sketch.Permalink }}"></script>
+{{ end }}
+{{ if in .Params.play "bg-slideshow" }}
+<div id="content">
+<div id="slider" data-images=
+ {{ if .Params.bgSlideshowImages }}
+{{ .Params.bgSlideshowImages }}
+{{ else }}
+'[
+"/images/bg-slideshow/01.png",
+"/images/bg-slideshow/02.png",
+"/images/bg-slideshow/03.png",
+"/images/bg-slideshow/04.png",
+"/images/bg-slideshow/05.png"
+        ]'
+{{ end }}
+>
+</div>
+</div>
+<script>
+  let sketch = new Sketch({
+    duration: 1.5,
+    debug: false,
+    easing: 'easeOut',
+    uniforms: {
+      width: {value: 0.5, type:'f', min:0, max:10},
+    },
+    fragment: `
+    uniform float time;
+    uniform float progress;
+    uniform sampler2D texture1;
+    uniform sampler2D texture2;
+    uniform vec4 resolution;
+
+    varying vec2 vUv;
+    varying vec4 vPosition;
+
+
+    void main() {
+      vec2 newUV = (vUv - vec2(0.5))*resolution.zw + vec2(0.5);
+      vec2 p = newUV;
+      float x = progress;
+      x = smoothstep(.0,1.0,(x*2.0+p.y-1.0));
+      vec4 f = mix(
+      texture2D(texture1, (p-.5)*(1.-x)+.5), 
+      texture2D(texture2, (p-.5)*x+.5), 
+      x);
+      gl_FragColor = f;
+    }
+    `
+  });
+  var intervalId = window.setInterval(function(){
+    sketch.next()
+  }, {{ if .Params.bgSlideshowDuration }}
+{{ .Params.bgSlideshowDuration }}
+{{ else }}
+5000
+{{ end }}
+);
+</script>
+{{ end }}

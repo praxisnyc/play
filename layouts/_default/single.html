@@ -6,7 +6,7 @@ style-{{ .File.BaseFileName }} {{ if .Params.style  }}{{ .Params.style }}{{ end 
 {{ end }}'>
 {{ partial "play-head.html" . }}
 <body>
-  {{ partial "play-scripts.html" . }}
+  {{ partial "play-scripts-top.html" . }}
   {{ if in .Params.play "revealjs" }}
   <div class="reveal">
    <div class="slides">
@@ -21,10 +21,14 @@ style-{{ .File.BaseFileName }} {{ if .Params.style  }}{{ .Params.style }}{{ end 
 {{ .Content }}
 {{ end }}
 
+ 
+
 {{ partial "play-credits.html" . }}
 {{ partial "play-requests.html" . }}
 {{ if in .Params.play "revealjs" }}
 {{ partial "play-revealjs-js.html" . }}
 {{ end }}
+
+{{ partial "play-scripts-bottom.html" . }}
 </body>
 </html>
